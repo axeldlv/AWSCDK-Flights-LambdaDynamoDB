@@ -7,9 +7,7 @@ region = "us-west-1"
 localstackurl = "https://localhost.localstack.cloud:4566"
 
 dynamoDBClient = boto3.client('dynamodb', 
-             endpoint_url=localstackurl, 
-             aws_access_key_id='test', 
-             aws_secret_access_key='test', 
+             endpoint_url=localstackurl,
              region_name=region)
 
 dynamodb = boto3.resource('dynamodb', endpoint_url=localstackurl, region_name=region)
